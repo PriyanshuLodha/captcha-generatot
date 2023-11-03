@@ -15,7 +15,6 @@ public class UserNotes {
     @Column(name = "note_id")
     private Integer id;
     private String data;
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private UserInfo userInfo;
+    private Integer user_id;
+    private Boolean completed= false;
 }
