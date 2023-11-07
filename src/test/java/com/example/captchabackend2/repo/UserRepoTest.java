@@ -14,6 +14,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -25,6 +27,7 @@ class UserRepoTest {
     void deleteData(){
         userRepo.deleteAll();
     }
+
     @Test
     void findByUsername() {
         //given
